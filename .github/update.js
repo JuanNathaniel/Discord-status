@@ -5,7 +5,7 @@ const isProd = true // This should be set to true when not a local development v
 const core = require('@actions/core');
 const axios = require('axios');
 const { readFileSync, writeFileSync } = require('fs');
-const id = isProd ? core.getInput("id") : "893762371770802227"
+const id = isProd ? core.getInput("id") : "686191157335818248"
 const file = isProd ? core.getInput("file") : "README.md"
 
 const deriveReplacement = (status) => {
