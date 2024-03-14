@@ -15,6 +15,7 @@ jobs:
         with:
           file: README.md
           id: "686191157335818248" # Replace with your Discord User ID.
+          node-version: '20'
       - name: Commit and push if there are changes
         run: |-
           git diff
