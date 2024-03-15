@@ -1,0 +1,16 @@
+name: 'Discord Status'
+description: 'Update your discord status in a file using this action.'
+branding:
+  icon: 'activity'
+  color: 'purple'
+inputs:
+  file:  
+    description: 'File to write to'
+    required: true
+    default: 'README.md'
+  id:  
+    description: 'Discord ID of the user whose status you want to fetch.'
+    required: true
+runs:
+  using: 'node16'
+  main: 'update.js'
